@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Silent Melody - Proposal</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Background music -->
+  <audio id="bgMusic" autoplay loop>
+    <source src="audio/melody.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h1 class="fade-in">The Silent Melody</h1>
+    <div id="letterContainer" class="letter-container"></div>
+    <div id="response-container" class="response-container hidden">
+      <button onclick="respond('yes')">Yes 💖</button>
+      <button onclick="respond('no')">No 💔</button>
+    </div>
+    <div id="notification" class="hidden">Waiting for response...</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
